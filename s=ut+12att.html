@@ -1,0 +1,194 @@
+<html>
+<head>
+</head>
+<body style="background-color:lightyellow;">
+<style type="text/css">
+input{font-size:20px;
+}
+button{background-color:lightgreen;
+width:50px;
+height:30px;
+border: 5px outset lightgreen;
+}
+span{font-size:20px;}
+.grid{display:grid;
+	 grid-template-columns:1fr 1fr;
+	 padding:10px;
+	 }
+.numerator {text-decoration: underline;
+float:right;
+ padding:1px;
+ border: 1px ;
+ background-color:lightyellow;
+ width:50%;
+}
+.right1numerator{text-decoration: underline;
+background-color:lightyellow;
+border: 1px ;
+}
+.denominator{float:right;
+ padding:1px;
+ border: 1px ;
+ background-color:lightyellow;
+ width:50%;
+}
+.right1denominator{
+padding:1px;
+ border: 1px ;
+ background-color:lightyellow;
+ 
+}
+.fullwidth{float:right;
+ padding:1px;
+ border: 1px ;
+ background-color:lightyellow;
+}
+</style>
+<div style="
+	 background-color: lightgreen;
+	 color: black;
+	 position: fixed;
+	 top: 1vw;
+	 left: 1vw;
+	 right: 1vw;
+	 border: 2vw outset lightgreen;
+	 height: 45vw;
+	 width:1fr;
+	 z-index: 100;
+	 font-size: 5vw;
+ ">
+	 <h3>Question</h3>
+	  derive the equations of motion<br>
+	  or<br>
+	  Derive the kinematic equation<br>
+</div>	  
+<div style="height:48vw;"> 
+</div>
+<div class="grid"> 
+      <div >
+          <input size="9" class="fullwidth"type="text">
+      </div>
+	  <div>=
+		  <input size="7"class="right1numerator"type="text">
+		  <div >
+		  <span 
+		  class="input" 
+		  role="textbox" 
+		  contenteditable>
+		  &ensp;&ensp;&ensp;
+		  </span>
+		  </div>
+	  </div>  
+</div>
+
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+
+<div class="grid"> 
+      <div >
+          <input size="9" class="fullwidth"type="text">
+      </div>
+	  <div>=
+		  <input size="7"class="right1denominator"type="text">
+		  
+	  </div>  
+</div>
+
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="1"class="denominator"type="text">
+      </div>
+	  <div class="equals">=
+		  <input size="7"class="right1denominator"type="text">	  
+	  </div>
+</div>
+
+<div style="position: fixed; bottom:0px; background-color:lightyellow;">
+  <p> final expression, s=ut + &half; at&#178;</p>
+</div>
+  <div style="position: fixed; bottom:10px; right:65px; background-color:lightyellow;" >
+  
+  <p ><div style="display:none"id=p1>&#178;</div></p> 
+  <button onclick="copyToClipboard('p1')">x²</button>
+  </div>
+  <div style="position: fixed; bottom:10px; right:10px; background-color:lightyellow;">
+  
+  <p><div style="display:none" id=p4>&half;</div></p>
+  <button class="copyButton btn" onclick="copyToClipboard('p4')">&half;</button>
+  
+  </div>
+  <script>
+  function copyToClipboard(var1){
+  let val = document.getElementById(var1).innerHTML;
+  const selBox = document.createElement('textarea');
+  selBox.style.position = 'fixed';
+  selBox.style.left = '0';
+  selBox.style.top = '0';
+  selBox.style.opacity = '0';
+  selBox.value = val;
+  document.body.appendChild(selBox);
+  selBox.focus();
+  selBox.select();
+  document.execCommand('copy');
+  document.body.removeChild(selBox);
+  
+  }  
+  
+  
+  </script>
